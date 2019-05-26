@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<track duration="10" number="3" xmlns="net.soundinglight.tapelist">
+    <paragraph id="1" paragraphLabel="paragraph1" alignment="left" indent="true">
+        <fragment type="latin" style="normal">latin</fragment>
+        <image mimeType="image/jpeg" widthMm="8.3" heightMm="13.1">dGVzdCBjb250ZW50</image>
+        <fragment type="sacred" style="normal">sacred</fragment>
+    </paragraph>
+    <paragraph id="2" paragraphLabel="paragraph2" alignment="justify" indent="false">
+        <fragment type="latin" style="italic">italic</fragment>
+        <fragment type="latin" style="bold">	</fragment>
+    </paragraph>
+</track>

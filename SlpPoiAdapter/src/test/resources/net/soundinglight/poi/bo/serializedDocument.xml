@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document name="test document" xmlns="net.soundinglight.poi-v1">
+    <paragraph id="1" alignment="justify" indentFromLeft="123" firstLineIndent="456">
+        <characterRun font="S.L. SoulWord" bold="false" italic="false">run1</characterRun>
+        <picture mimeType="image/jpeg" horizontalScalingFactor="0.123" verticalScalingFactor="1.0" dxaGoalMm="30" dyaGoalMm="40">c2FtcGxlIGNvbnRlbnQ=</picture>
+        <characterRun font="Zapf Dingbats" bold="false" italic="false">run2</characterRun>
+    </paragraph>
+    <paragraph id="2" alignment="justify" indentFromLeft="234" firstLineIndent="567">
+        <characterRun font="Times" bold="false" italic="true">italic</characterRun>
+        <characterRun font="Times" bold="true" italic="false">bold</characterRun>
+    </paragraph>
+</document>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<documentCorrections lastAppliedParagraphId="-2" xmlns="net.soundinglight.poi-v1">
+    <addition after="2">
+        <paragraph id="-1" alignment="justify" indentFromLeft="123" firstLineIndent="456">
+            <characterRun font="S.L. SoulWord" bold="false" italic="false">run1</characterRun>
+            <picture mimeType="image/jpeg" horizontalScalingFactor="0.123" verticalScalingFactor="1.0" dxaGoalMm="30" dyaGoalMm="40">c2FtcGxlIGNvbnRlbnQ=</picture>
+            <characterRun font="Zapf Dingbats" bold="false" italic="false">run2</characterRun>
+        </paragraph>
+        <paragraph id="-2" alignment="justify" indentFromLeft="123" firstLineIndent="456">
+            <characterRun font="S.L. SoulWord" bold="false" italic="false">run1</characterRun>
+            <picture mimeType="image/jpeg" horizontalScalingFactor="0.123" verticalScalingFactor="1.0" dxaGoalMm="30" dyaGoalMm="40">c2FtcGxlIGNvbnRlbnQ=</picture>
+            <characterRun font="Zapf Dingbats" bold="false" italic="false">run2</characterRun>
+        </paragraph>
+    </addition>
+    <removal from="3" to="4"/>
+    <replacement>
+        <paragraph id="2" alignment="justify" indentFromLeft="123" firstLineIndent="456">
+            <characterRun font="S.L. SoulWord" bold="false" italic="false">run1</characterRun>
+            <picture mimeType="image/jpeg" horizontalScalingFactor="0.123" verticalScalingFactor="1.0" dxaGoalMm="30" dyaGoalMm="40">c2FtcGxlIGNvbnRlbnQ=</picture>
+            <characterRun font="Zapf Dingbats" bold="false" italic="false">run2</characterRun>
+        </paragraph>
+    </replacement>
+    <move id="5" after="2"/>
+</documentCorrections>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sessionDetails id="1" available="true" xmlns="net.soundinglight.tapelist">
+    <location>Amsterdam</location>
+    <date>04/22/1982</date>
+    <momentOfDay>1st AM</momentOfDay>
+    <duration>53</duration>
+    <recommendation>Low</recommendation>
+    <title>Session 1 title</title>
+    <subTitle>sub title</subTitle>
+    <restriction>Unrestricted</restriction>
+    <subRestrictions>
+        <subRestriction>sub restriction</subRestriction>
+    </subRestrictions>
+    <keyTopics>
+        <keyTopic>Key topic 1</keyTopic>
+        <keyTopic>Key topic 2</keyTopic>
+        <keyTopic>Key topic 3</keyTopic>
+    </keyTopics>
+    <additionalRemarks>
+        <additionalRemark>some additional remark</additionalRemark>
+    </additionalRemarks>
+    <mediaDetails>
+        <palVideoDetails id="123" restriction="Restricted"/>
+        <palVideoDetails id="456" restriction="Semi-Restricted"/>
+        <ntscVideoDetails id="789" restriction=""/>
+    </mediaDetails>
+    <notes>
+        <note>A special note to session 1</note>
+    </notes>
+</sessionDetails>

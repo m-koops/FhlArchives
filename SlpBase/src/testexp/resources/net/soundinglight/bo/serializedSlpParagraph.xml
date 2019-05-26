@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<paragraph id="1" paragraphLabel="paragraph label" bulletLabel="bullet label" alignment="center" indent="true" xmlns="net.soundinglight.tapelist">
+    <fragment type="latin" style="normal">latin</fragment>
+    <image mimeType="image/jpeg" widthMm="8.3" heightMm="13.1">dGVzdCBjb250ZW50</image>
+    <fragment type="sacred" style="normal">sacred</fragment>
+    <fragment type="latin" style="italic">italic</fragment>
+    <fragment type="latin" style="bold">	</fragment>
+</paragraph>

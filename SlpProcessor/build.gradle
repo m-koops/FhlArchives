@@ -1,0 +1,8 @@
+apply from: "${buildSrcDir}/build-java.gradle"
+
+project.description = 'SlpProcessor'
+
+dependencies {
+	compile project(':SlpPoiAdapter')
+	testexpCompile project(path: ':SlpPoiAdapter', configuration: 'testexpCompile')
+}

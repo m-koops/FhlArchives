@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<event name="test event" xmlns="net.soundinglight.tapelist">
+    <preamble>
+        <paragraph id="-1" alignment="left" indent="false">
+            <fragment type="latin" style="normal">preamble</fragment>
+        </paragraph>
+    </preamble>
+    <conclusion>
+        <paragraph id="-2" alignment="left" indent="false">
+            <fragment type="latin" style="normal">conclusion</fragment>
+        </paragraph>
+    </conclusion>
+    <session>
+        <details id="1" available="true">
+            <location>Amsterdam</location>
+            <date>04/22/1982</date>
+            <momentOfDay>1st AM</momentOfDay>
+            <duration>53</duration>
+            <recommendation>Low</recommendation>
+            <title>Session 1 title</title>
+            <subTitle>sub title</subTitle>
+            <restriction>Unrestricted</restriction>
+            <subRestrictions>
+                <subRestriction>sub restriction</subRestriction>
+            </subRestrictions>
+            <keyTopics>
+                <keyTopic>Key topic 1</keyTopic>
+                <keyTopic>Key topic 2</keyTopic>
+                <keyTopic>Key topic 3</keyTopic>
+            </keyTopics>
+            <additionalRemarks>
+                <additionalRemark>some additional remark</additionalRemark>
+            </additionalRemarks>
+            <mediaDetails>
+                <palVideoDetails id="123" restriction="Restricted"/>
+                <palVideoDetails id="456" restriction="Semi-Restricted"/>
+                <ntscVideoDetails id="789" restriction=""/>
+            </mediaDetails>
+            <notes>
+                <note>A special note to session 1</note>
+            </notes>
+        </details>
+        <tracks>
+            <track duration="10" number="3">
+                <paragraph id="1" paragraphLabel="paragraph1" alignment="left" indent="true">
+                    <fragment type="latin" style="normal">latin</fragment>
+                    <image mimeType="image/jpeg" widthMm="8.3" heightMm="13.1">dGVzdCBjb250ZW50</image>
+                    <fragment type="sacred" style="normal">sacred</fragment>
+                </paragraph>
+                <paragraph id="2" paragraphLabel="paragraph2" alignment="justify" indent="false">
+                    <fragment type="latin" style="italic">italic</fragment>
+                    <fragment type="latin" style="bold">	</fragment>
+                </paragraph>
+            </track>
+        </tracks>
+        <trackTimings>
+            <trackTiming>some track timings</trackTiming>
+        </trackTimings>
+    </session>
+</event>

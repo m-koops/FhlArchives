@@ -1,0 +1,10 @@
+include 'SlpBase'
+include 'SlpPoiAdapter'
+include 'SlpProcessor'
+
+rootProject.name = 'SlpRoot'
+rootProject.children.each {project ->
+    project.projectDir = new File(settingsDir, project.name)
+    assert project.projectDir.isDirectory()
+    assert project.buildFile.isFile()
+}

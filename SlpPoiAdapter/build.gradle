@@ -1,0 +1,11 @@
+apply from: "${buildSrcDir}/build-java.gradle"
+
+project.description = 'SlpPoiAdapter'
+
+dependencies {
+	compile project(path: ':SlpBase')
+	testexpCompile project(path: ':SlpBase', configuration: 'testexpCompile')
+
+	compile 'org.apache.poi:poi:4.0.1'
+	compile 'org.apache.poi:poi-scratchpad:4.0.1'
+}

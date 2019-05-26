@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<paragraph id="1" alignment="justify" indentFromLeft="123" firstLineIndent="456" xmlns="net.soundinglight.poi-v1">
+    <characterRun font="S.L. SoulWord" bold="false" italic="false">run1</characterRun>
+    <picture mimeType="image/jpeg" horizontalScalingFactor="0.123" verticalScalingFactor="1.0" dxaGoalMm="30" dyaGoalMm="40">c2FtcGxlIGNvbnRlbnQ=</picture>
+    <characterRun font="Zapf Dingbats" bold="false" italic="false">run2</characterRun>
+</paragraph>

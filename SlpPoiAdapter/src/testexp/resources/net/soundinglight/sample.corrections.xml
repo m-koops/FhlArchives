@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<documentCorrections xmlns="net.soundinglight.poi-v1">
+	<replacement>
+	    <paragraph id="7" alignment="center" indentFromLeft="0" firstLineIndent="0">
+	    	<characterRun font="Times" bold="true" italic="true">replacement text</characterRun>
+	    </paragraph>
+	</replacement>
+	<removal from="8" to="8" />
+	<addition after="7">
+	    <paragraph id="-1" alignment="center" indentFromLeft="0" firstLineIndent="0">
+	    	<characterRun font="Times" bold="true" italic="true">added text</characterRun>
+	    </paragraph>
+	</addition>
+	<replacement>
+	    <paragraph id="9" alignment="center" indentFromLeft="0" firstLineIndent="0">
+	        <characterRun font="Times" bold="true" italic="true">other replacement</characterRun>
+	    </paragraph>
+	</replacement>
+</documentCorrections>

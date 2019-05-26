@@ -1,0 +1,34 @@
+version = '0.1'
+
+ext {
+	buildSrcDir = "${rootProject.projectDir}/buildSrc"
+}
+
+buildscript {
+	ext {
+		versions = [
+				'springBoot': '2.1.1.RELEASE'
+		]
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'se.transmode.gradle:gradle-docker:1.2'
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:$versions.springBoot")
+	}
+}
+
+allprojects {
+	project.defaultTasks 'build'
+	repositories {
+		flatDir {
+			dirs '../lib'
+		}
+		mavenCentral()
+	}
+}
+
+wrapper {
+	gradleVersion = '3.4'
+}

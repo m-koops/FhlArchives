@@ -1,0 +1,70 @@
+apply plugin: 'java'
+apply plugin: 'build-dashboard'
+apply plugin: 'idea'
+
+configurations {
+	testexpCompile
+}
+
+sourceSets {
+	testexp {
+		compileClasspath = sourceSets.main.runtimeClasspath + configurations.testexpCompile
+	}
+	test {
+		compileClasspath = sourceSets.testexp.compileClasspath + configurations.testCompile + sourceSets.testexp.output
+		runtimeClasspath = compileClasspath + configurations.testRuntime + sourceSets.test.output
+	}
+}
+
+ext {
+	sharedManifest = manifest {
+		attributes(
+			"Implementation-Artifact-Id": project.name,
+			"Implementation-Version": project.version,
+			"Implementation-Vendor": "SoundingLight Publishing",
+			"Created-By": "Gradle " + gradle.gradleVersion,
+			"SLP-BuildRevision": "unknown"
+		)
+	}
+}
+
+test {
+	testLogging {
+		exceptionFormat = 'full'
+
+		// set options for log level LIFECYCLE
+		events "skipped", "failed"
+		
+		// set options for log level DEBUG
+		debug { events "started", "skipped", "failed" }
+
+		minGranularity 2
+		maxGranularity 3
+	}
+}
+
+jar {
+	manifest = sharedManifest
+}
+
+tasks.jar.dependsOn test
+
+task testexpJar(type: Jar) {
+	dependsOn test
+	classifier = 'tests'
+	from sourceSets.testexp.output
+	manifest = sharedManifest
+}
+
+project.tasks.build.dependsOn(buildtestexpCompile)
+
+artifacts {
+	testexpCompile testexpJar
+}
+
+// Use Java 8 by default
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+// UTF-8 should be standard by now. So use it!
+[compileJava, compileTestJava]*.options*.encoding = 'ISO-8859-1'
